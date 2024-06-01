@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Гареев Тимур Артурович</title>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon-16X16.png">
+        <link rel="shortcut icon" href="favicon-32x32.png">
+    </head>
+    <script>
+        function showSum() {
+            let inputA = document.getElementById('numberA')
+            let inputB = document.getElementById('numberB')
+            
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a + b;
+            alert('Сумма '+ a + ' и '+ b + ' равна ' + result);
+        }
+        function showAuthor() {
+            let author = 'Автор страницы:\nГареев Тимур Артурович';
+            alert(author);
+        }
+        function sayHello() {
+            let hello = 'Привествую вас на моей странице!!!';
+            alert(hello);
+        }
+    </script>
+    <style>
+        .message {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            border: 2px solid;
+            cursor: pointer;
+        }
+        header {
+            cursor: pointer;
+        }
+        footer {
+            cursor: pointer;
+        }
+    </style>
+
+    <body>
+        <header onclick="showAuthor()">
+            НГТУ, ФБ, Лабораторная работа 5
+        </header>
+
+        <main>
+            <label>первое число: <input type="number" value="5154" id="numberA"></label><br>
+            <label>второе число: <input type="number" value="7891" id="numberB"></label><br>
+            <div class="message" onclick="showSum()">Найти сумму чисел</div>
+            <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
+        </main>
+
+        <footer ondblclick="sayHello()">
+            &copy; Гареев Тимур, ФБИ-23, 2 курс, 2024
+        </footer>
+    </body>
+</html>
