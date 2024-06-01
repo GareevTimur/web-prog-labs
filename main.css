@@ -24,6 +24,11 @@ footer {
     color: darkseagreen;
     font-family: 'Times New Roman';
     margin: 0px;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 a {
