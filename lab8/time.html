@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гареев Тимур. Лабораторная работа 8</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-16X16.png">
+    <link rel="shortcut icon" href="favicon-32x32.png">
+    <script src="time.js"></script>
+    <style>
+        div {
+            margin: 20px;   
+        }
+        .clock {
+            width: 350px;
+            height: 350px;
+            padding: 0;
+            border-radius: 50%;
+            border: 10px  darkgreen solid;
+            background-color: lightgray;
+            margin: auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background: url(clock.png);
+            background-size: cover;
+        }
+        .seconds {
+            padding: 0;
+            border: 0;
+            transition: 0s;
+            border-radius: 2px;
+            width: 4px;
+            height: 150px;
+            margin: auto;
+            background-color: green;
+            position: relative;
+        }
+    </style>
+    
+</head>
+<body onload="showTime()">
+    <header>
+        НГТУ, ФБ, Лабораторная работа 8
+        <span id="time" style="display: inline-block; width: calc(100% - 5px); text-align: right; ">00:00:00</span>
+    </header>
+
+    <main>
+        <h1>Время</h1>
+        <div style="border: none; font-size: 80pt; text-align: center;width: 100%; height: fit-content;" id="bigtime">
+        </div>
+        <div class="clock">
+            <div id="seconds" class="seconds"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Гареев Тимур, ФБИ-23, 2 курс, 2024
+    </footer>
+</body>
+</html>

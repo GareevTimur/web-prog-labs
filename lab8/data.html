@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гареев Тимур. Лабораторная работа 8, Дата</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-16X16.png">
+    <link rel="shortcut icon" href="favicon-32x32.png">
+    <script src="lab8.js"></script>
+</head>
+<body onload="showDate()">
+    <header>
+        НГТУ, ФБ, Лабораторная работа 8
+    </header>
+
+    <main>
+        <h1>Дата</h1>
+        <div style="width: 500px; height: 200px; text-align: left;">
+            Дата и время для русской локали:
+            <span id="current-date" style="width: 300px; height: 200px; color: darkblue; font-size: 14px;"></span> <br>
+            Дата и время для локали Египта:
+            <span id="egypt-date" style="width: 300px; height: 200px; color:darkkhaki; font-size: 16px;"></span> <br> 
+            Дата и время для локали Каталана:
+            <span id="Catalan-date" style="width: 300px; height: 200px; color: maroon; font-size: 18px;"></span> <br>
+            Дата и время для локали Канады:
+            <span id="Canada-date" style="width: 300px; height: 200px; color: grey; font-size: 20px;"></span> <br>
+            Дата и время для локали Франции:
+            <span id="French-date" style="width: 300px; height: 200px; color: rgb(186, 72, 209); font-size: 22px;"></span> <br>
+            Дата и время для локали Японии:
+            <span id="Japanese-date" style="width: 300px; height: 200px; color: navy; font-size: 24px;"></span> <br>
+        </div>
+        <div style="width: 300px; height: 120px; text-align: left;">
+            Текущий год:
+            <span id="current-year"></span> <br>
+            Текущий месяц:
+            <span id="current-month"></span> <br>
+            Текущая дата:
+            <span id="current-day"></span> <br>
+            
+            День недели:
+            <span id="day-of-week"></span> <br>
+
+        </div>
+        <div style="width: 300px; height: 150px; text-align: left;">
+            <label>введите год:
+            <input type="text"  id="year"></label> <br>
+            <label>введите месяц:
+            <input type="text"  id="month"></label> <br>
+            <label>введите дату:
+            <input type="text" id="day"></label> <br><br>
+                <input type="button" value="Показать день недели" onclick="showDayOfWeek()"> 
+            <p>
+            День недели:
+            <span id="day-of-week-name"></span> 
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; Гареев Тимур, ФБИ-23, 2 курс, 2024
+    </footer>
+</body>
+</html>
+

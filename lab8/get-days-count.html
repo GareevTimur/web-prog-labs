@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гареев Тимур. Лабораторная работа 8</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-16X16.png">
+    <link rel="shortcut icon" href="favicon-32x32.png">
+    <script src="get-days-count.js"></script>
+</head>
+<body onload="showDate()">
+    <header>
+        НГТУ, ФБ, Лабораторная работа 8
+    </header>
+
+    <main>
+        <h1>Число дней с даты рождения</h1>
+        <div style="border: none;">
+            <label>Дата рождения: <input type="date"></label> <br><br>
+            <input type="button" value="Показать число дней" onclick="showDateCount()">  
+            <input type="button" value="Очистить" onclick="clearAll()">
+            <p>
+                Количество дней с дня рождения:  <span id="count-days"></span>
+            </p>
+
+            <span> 
+        </div>
+    </main>
+
+    <footer>
+        &copy; Гареев Тимур, ФБИ-23, 2 курс, 2024
+    </footer>
+</body>
+</html>
