@@ -31,6 +31,7 @@ function showDate() {
     let dayOfWeekOut = document.getElementById('day-of-week');
     dayOfWeekOut.innerText = dayOfWeek;
     
+    
 }
 function showDayOfWeek() {
     let year = document.getElementById('year').value;
